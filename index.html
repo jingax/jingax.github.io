@@ -44,6 +44,11 @@
   color: white;
 }
 
+.p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 
 
@@ -108,9 +113,12 @@
             
             <div class="row justify-content-between gy-4">
               <center>
-              <div class="col-lg-5">
-                <img src="assets/img/me3.jpg" class="img-fluid" alt="">
-                <a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-instagram"></a><a href="#" class="fa fa-github"></a>
+              <div class="col-lg-6">
+                <img src="assets/img/MEM.jpg" class="img-fluid" alt="">
+                <a href="https://x.com/AastikSolanki" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/aastik.solanki/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://github.com/jingax" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/aastik-solanki/" target="_blank" class="fa bi-linkedin"></a>
               </div>
             </center>
             </div>
@@ -120,8 +128,8 @@
           <div class="col-md-6">
             <div class="about-me">
               <h4>Hi there!</h4>
-              <p>
-                 I'm Aastik, an ML Engineer at Samsung Research. With a Master's in Technology from IIT Bombay (2023) and a B.Tech from JSS Noida (2021), my journey in the tech world has been nothing short of exhilarating. My thesis focu into the fascinating world of ML in constrained setups, and now, I’m navigating the cutting-edge realm of Vision Language Models.
+              <p style="">
+                 I'm Aastik, an ML Engineer at Samsung Research. With a Master's in Technology from IIT Bombay (2023), my journey in the tech world has been nothing short of exhilarating. My thesis focu into the fascinating world of ML in constrained setups, and now, I’m navigating the cutting-edge realm of Vision Language Models.
                 </p>
                 <p>
 I’m a quick learner and adapt like a chameleon! When I’m not immersed in algorithms and data, you can find me scoring goals on the football field, hitting sixes in cricket, making a splash while swimming, or serenading with my flute. Life's a blend of code and rhythm for me!
@@ -143,7 +151,7 @@ Let's connect and create something extraordinary!
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Download pdf? Click <a href="#">here</a></p>
+        <p>Download pdf? Click <a href="./resume.pdf" target="_blank" download>here</a></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -160,13 +168,14 @@ Let's connect and create something extraordinary!
                 <li>Bangalore, Karnataka, India</li>
                 <li>aastik.solanki99@gmail.com</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div><!-- End Resume Item -->
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Masters in Technology in Computer Science & Engineering</h4>
-              <h5>2021 - 2023</h5>
+              <h5 style="float:right;">2021 - 2023</h5>
               <p><em>Indian Institute of Technology, Bombay, India</em></p>
+              
               <p><em>Worked under <a href="https://www.cse.iitb.ac.in/~ganesh/">Prof. Ganesh Ramakrishnan</a> on Machine learning in federated settings, optimization via subset selection and Knowlegde distillation</em></p>
               <p><strong>Multi-Task Federated Learning</strong></p>
               <ul>
@@ -208,18 +217,37 @@ Let's connect and create something extraordinary!
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Senior Engineer</h4>
-              <h5>2023 - Present</h5>
+              <h5 style="float:right;">2023 - Present</h5>
               <p><em>Samsung Research, Bangalore </em></p>
+              <h5>Semantic Search using Vision Language Model Pipeline</h5>
               <ul>
-                <li>Developed Internal verifcation and evaluation tool for multimodal models (VLMs)</li>
-                <li>Improved image search quality in previuosly unexplored categories such as Exclsuion queries (See <a href="#">NEXIN</a>)</li>
-                <li>SIGLIP optimization with subset selection via submodularirty for Image-Text Pretraining</li>
+                <li>Transitioned from tag-based to natural language search using Vision Language Models (VLM) on edge devices,
+                  improving search relevance for 10 million+ flagship devices</li>
+                <li>Experimented with a novel training regime of subset selection of negative pairs via submodular selection in
+                  SIGLIP for image-text alignment pretraining for faster training</li>
+                <li>Proposed new metrics (Recall@80p) for Image retrieval task, and optimized VLM pipelines on edge devices,
+                  reducing model size by 16% and inference time by 25ms per inference</li>
+              </ul>
+              <h5>NEXIN:Negative Exclusion Inference</h5>
+              <ul>
+                <li> Proposed and implemented NEXIN, a novel preprocessing technique for exclsuion search queries, improving
+                  result accuracy by over 85% for ∆U </li>
+                <li>Introduced the Barrier Potential (∆U ) to evaluate the ordering of positive and negative images.</li>
+                <li>Authored and submitted the NEXIN paper to EMNLP 2024, covering 100+ hours of research and devel-
+                  opment, playing a pivotal role as the main contributor</li>
+              </ul>
+              <h5>TestSuite</h5>
+              <ul>
+                <li> Developed a model evaluation tool(TestSuite) used by 5+ teams, cutting evaluation time by 50%. </li>
+                <li>Owned full lifecycle of the project, from initial development to ongoing maintenance, ensuring its continuous
+                  improvement and alignment with evolving team needs</li>
+                <li>Built a tool to evaluate 7 VLM pipelines on 60+ datasets, saving 200+ man-hours/month</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Web Developer- BAck & Front End</h4>
-              <h5>2020</h5>
+              <h4>Web Developer- Back & Front End</h4>
+              <h5 style="float:right;">2020</h5>
               <p><em>IdealVillage, Bangalore</em></p>
               <ul>
                 <li>Created the entire Wallet system of the platform to withdraw, add money and view past transaction details.</li>
@@ -231,7 +259,7 @@ Let's connect and create something extraordinary!
                             <li>Implemented a system to give commission to affiliates instantly.</li>
                               <li>Created a dashboard for affiliates to track user traffic origin, referrals activated, clients and payments using pie charts, maps and tables.</li>
 <li>Revamped the payments page of the platform with an intuitive, attractive and better navigable design using Bootstrap and ajax</li>
-strap and Ajax.
+
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -258,6 +286,16 @@ strap and Ajax.
               <p>
                 Or you can reach out to me on my socials or mail me!
               </p>
+              
+                <center>
+                <div class="col-lg-7">
+                  <a href="https://x.com/AastikSolanki" target="_blank" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/aastik.solanki/" target="_blank" class="fa fa-instagram">
+                  </a><a href="https://github.com/jingax" target="_blank" class="fa fa-github"></a>
+                  <a href="https://www.linkedin.com/in/aastik-solanki/" target="_blank" class="fa bi-linkedin"></a>
+                </div>
+              </center>
+              
             </div>
           </div>
 
@@ -267,7 +305,7 @@ strap and Ajax.
               <div class="faq-item">
                 <h3><span class="num">1.</span> <span>Am I open to work?</span></h3>
                 <div class="faq-content">
-                  <p>Always</p>
+                  <p>Yes, I would require to serve a notice period of 2 months</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -275,7 +313,11 @@ strap and Ajax.
               <div class="faq-item">
                 <h3><span class="num">2.</span> <span>Skills?</span></h3>
                 <div class="faq-content">
-                  <p>Many.</p>
+                <p><strong>Languages:</strong> Python (Django, Flask), C/C++, Java, Rust, Kotlin<br>
+                  <strong>ML Frameworks:</strong> TensorFlow, PyTorch, Keras, Scikit-learn, ONNX<br>
+                  <strong>Data Processing:</strong> Pandas, NumPy<br>
+                  <strong>Tools:</strong> Docker, Git, MLOps
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -291,7 +333,7 @@ strap and Ajax.
               <div class="faq-item">
                 <h3><span class="num">4.</span> <span>Do I have any notable achivements?</span></h3>
                 <div class="faq-content">
-                  <p>Yes, I got <strong>All India rank 12</strong> in GATE CSE 2021 and I ahve finished a couple of marathons.</p>
+                  <p>Yes, I got <strong>All India rank 12</strong> in GATE CSE 2021 and I have finished a couple of marathons.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -413,18 +455,11 @@ strap and Ajax.
         <p>Hire <strong class="px-1 sitename">Aastik</strong> </p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/AastikSolanki"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/aastik.solanki/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aastik-solanki/"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+
     </div>
 
   </footer>
